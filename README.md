@@ -1,6 +1,6 @@
 # Capstone Project Proposal - Karen Russeth
 
-**PokeMath: A Gamified Learning Experience**
+## PokeMath: A Gamified Learning Experience ##
 Technologies Used: React, NodeJS, ReactStrap, PostgreSQL
 
 ## Introduction:
