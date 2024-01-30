@@ -10,7 +10,7 @@ I propose the development of an engaging and educational Pokemon-styled math gam
 MathQuest is designed as a single-page game app that incorporates elements from the Pokemon universe through data sourced from the PokeAPI (https://pokeapi.co/api/v2/). The primary objective is to create an entertaining yet educational experience where players can build their personalized Pokedex by solving math problems.
 
 ## Audience:
-The intended audience for this math game app is primary grade students, with a focus on developing early Elementary Math Skills for children age 5 - 7.
+The intended audience for this math game app is primary grade students, with a focus on developing Early Elementary Math Skills for children age 5 - 7.
 
 ## Features:
 
