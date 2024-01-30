@@ -30,5 +30,5 @@ The won cards in the Pokedex will be categorized by type, enhancing the user exp
 Players can click on a card to flip it over, revealing character properties such as name, type, and abilities.
 
 ## Conclusion:
-MathQuest seeks to combine the allure of Pokemon with educational value, creating an interactive and enjoyable math learning experience. Through this gamified approach, users will not only enhance their mathematical skills but also embark on an exciting journey to become Pokemon Masters.
+PokeMath seeks to combine the allure of Pokemon with educational value, creating an interactive and enjoyable math learning experience. Through this gamified approach, users will not only enhance their mathematical skills but also embark on an exciting journey to become Pokemon Masters.
 
