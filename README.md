@@ -16,7 +16,7 @@ The intended audience for this math game app is primary grade students, with a f
 
 **User Authentication:**
 Players will have the ability to sign up and log in to the app.
-User data, including first name, last name, password, and email address, will be securely stored in a PostgreSQL database.
+User data, including first name, password, and email address (optional), will be securely stored in a PostgreSQL database.
 
 **Pokedex Building:**
 Players will draw Pokemon cards, each featuring a two-digit math problem (addition, subtraction, or multiplication) on the front.
