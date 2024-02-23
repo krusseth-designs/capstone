@@ -40,11 +40,12 @@ Players can click on a card to flip it over, revealing character properties such
 
 **Pokedex API**
 
-https://github.com/russethk/dev-repo/blob/main/poke-game/frontend/src/api/api.js
+https://github.com/krusseth-designs/capstone/blob/main/poke-game/frontend/src/api/api.js
+
 
 **Pokedex Database Schemas**
 
-https://github.com/russethk/dev-repo/tree/main/poke-game/backend/schemas
+https://github.com/krusseth-designs/capstone/tree/main/poke-game/backend/schemas
 
 
 
