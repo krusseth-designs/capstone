@@ -42,7 +42,7 @@ Players can click on a card to flip it over, revealing character properties such
 
 https://github.com/russethk/dev-repo/blob/main/poke-game/frontend/src/api/api.js
 
-** Pokedex Database Schemas **
+**Pokedex Database Schemas**
 
 https://github.com/russethk/dev-repo/tree/main/poke-game/backend/schemas
 
