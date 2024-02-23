@@ -25,7 +25,7 @@ function NavBar() {
 						<NavLink to="/">Game</NavLink>
 					</NavItem>
 					<NavItem>
-            			<NavLink to="/pokedex">My PokeDex</NavLink>
+            			<NavLink to="/pokedex">PokeDex</NavLink>
           			</NavItem>
 				</Nav>
 			</Navbar>

@@ -3,6 +3,10 @@
   "$id": "http://example.com/pokemonUpdate.schema.json",
   "type": "object",
   "properties": {
+    "id": {
+      "type": "integer",
+      "minimum": 1
+    },
     "name": {
       "type": "string",
       "minLength": 1,
@@ -12,11 +16,15 @@
       "type": "string",
       "minLength": 1,
       "maxLength": 30
+    },
+    "image_url": {
+      "type": "string",
+      "format": "uri"
     }
   },
   "additionalProperties": false,
   "required": [
     "name",
     "type"
-  ]
+    ]
 }

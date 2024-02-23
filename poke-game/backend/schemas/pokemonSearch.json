@@ -3,15 +3,25 @@
   "$id": "http://example.com/pokemonSearch.schema.json",
   "type": "object",
   "properties": {
+    "id": {
+      "type": "integer",
+      "minimum": 1
+    },
     "name": {
       "type": "string",
-      "minLength": 1
+      "minLength": 1,
+      "maxLength": 30
     },
     "type": {
       "type": "string",
-      "minLength": 1
+      "minLength": 1,
+      "maxLength": 30
+    },
+    "image_url": {
+      "type": "string",
+      "format": "uri"
     }
   },
   "additionalProperties": false,
-  "required": []
+  "required": [] 
 }

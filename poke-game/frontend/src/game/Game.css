@@ -1,0 +1,117 @@
+.Game {
+  text-align: center;
+  display: flex;
+}
+
+.Game main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.game-container {
+  display: flex;
+  margin-top: 100px;  
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  background-color: rgba(225, 226, 228, 0.95);
+  margin-top: 20px;
+  width: 90vw;
+  height: 90vh;
+  border: 1px solid #000;
+  border-radius: 10px;
+}
+
+
+.homepage-image {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.column-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+}
+
+
+.column-right {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.Card {
+  cursor: pointer;
+  width: 90%;
+}
+
+.CardBody {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  background-color: #ccc;
+  border: 1px solid #000;
+  border-radius: 10px;
+  width: 100%;
+}
+
+
+.title {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+.message {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 5px;
+  padding: 5px;
+  background-color: lightblue;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+}
+
+.scorecard {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: left;
+  padding: 20px;
+  margin-top: 20px;
+  font-family: "Emilys Candy", cursive;
+  background-color: #fff;
+  border: 1px solid #000;
+  border-radius: 10px;
+}
+
+h1 {
+  font-size: 40px;
+  font-weight: bold;
+  font-family: "Emilys Candy", cursive;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 30px;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight: bold;
+}
+
+img {
+  width: 6rem;
+}
+
+/* Path: src/Board.css */

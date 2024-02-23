@@ -17,13 +17,14 @@ class Pokemon {
 
   static async create(data) {
     const result = await db.query(
-          `INSERT INTO pokemon (id, name, type)
-           VALUES ($1, $2, $3)
-           RETURNING id, name, type`,
+          `INSERT INTO pokemon (id, name, type, image_url)
+           VALUES ($1, $2, $3, $4)
+           RETURNING id, name, type, image_url`,
         [
           data.id,
           data.name,
-          data.type
+          data.type,
+          data.image_url
         ]);
     let pokemon = result.rows[0];
 
@@ -36,17 +37,32 @@ class Pokemon {
    * 
    * */
 
-  static async findAll() {
-    const pokemonRes = await db.query(
-          `SELECT id,
-                  name,
-                  type
-           FROM pokemon
-           ORDER BY id`);
-    const pokemon = pokemonRes.rows;
-    if (!pokemon) throw new NotFoundError(`No pokemon`);
+  static async findAll({ name, type } = {}) {
+    let query = `SELECT id,
+                        name,
+                        type,
+                        image_url
+                  FROM pokemon`;
+    let queryValues = [];
 
-    return pokemon;
+    // For each possible search term, add to whereExpressions and
+    // queryValues so we can generate the right SQL
+
+    if (name) {
+      queryValues.push(name);
+      query += ` WHERE name ILIKE $${queryValues.length}`;
+    }
+
+    if (type) {
+      queryValues.push(type);
+      query += ` WHERE type ILIKE $${queryValues.length}`;
+    }
+
+    // Finalize query and return results
+
+    query += " ORDER BY name, type";
+    const pokemonRes = await db.query(query, queryValues);
+    return pokemonRes.rows;
   }
 
   /** Given a pokemon id, return data about pokemon.
@@ -60,7 +76,8 @@ class Pokemon {
     const pokemonRes = await db.query(
           `SELECT id,
                   name,
-                  type
+                  type,
+                  image_url
            FROM pokemon
            WHERE id = $1`, [id]);
 
@@ -94,7 +111,8 @@ class Pokemon {
                       WHERE id = ${idVarIdx} 
                       RETURNING id, 
                                 name, 
-                                type`;
+                                type
+                                image_url`;
     const result = await db.query(querySql, [...values, id]);
     const pokemon = result.rows[0];
 
