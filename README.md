@@ -1,10 +1,10 @@
-# Capstone Project Proposal - Karen Russeth
+# Capstone Project 
 
-## PokeMath: A Gamified Learning Experience ##
+## Pokemon Challenge: A Simple Pokemon Game Application  ##
 Technologies Used: React, NodeJS, ReactStrap, PostgreSQL
 
 ## Introduction:
-I propose the development of a Pokemon-styled math game app. This application will be crafted using React for the front end, NodeJS for the backend, ReactStrap for styling, and PostgreSQL to manage the database.
+Pokemon Challenge is a simple Pokemon inspired game app. This application will be crafted using React for the front end, NodeJS for the backend, ReactStrap for styling, and PostgreSQL to manage the database.
 
 ## Overview:
 Pokemon Challenge is designed as a single-page game app that incorporates elements from the Pokemon universe through data sourced from the PokeAPI (https://pokeapi.co/api/v2/). The primary objective is to create an entertaining experience where players can build their personalized Pokedex by "catching" Pokemon monsters by selecting the correct type of the Pokemon. 
@@ -23,12 +23,43 @@ Players 'catch' the Pokemon by correctly choosing the monsters' type; adding the
 
 **Score Tracking:**
 A scorecard will be displayed to track the number of cards won.
-Upon winning ten Pokemon cards of a specific type, players will earn a badge.
 Database Integration:
-The PostgreSQL database will store crucial player information, including the Pokemon they've won and the badges earned.
+The PostgreSQL database will store crucial player information, including the Pokemon they've won.
 
 **Pokedex Organization:**
-The won cards in the Pokedex will be categorized by type, enhancing the user experience.
+The won cards in the Pokedex are categorized by type, enhancing the user experience.
 Players can click on a card to flip it over, revealing character properties such as name, type, and abilities.
+
+------------------------------------------------------------
+
+** Application Components Outline ** 
+
+|-- src/
+|   |-- components/
+|   |   |-- Card.js
+|   |   |-- Pokedex.js
+|   |   |-- Scorecard.js
+|   |   |-- TypeButtons.js
+|   |   |-- TypeSelector.js
+|   |   |-- Navbar.js
+|   |-- pages/
+|   |   |-- Game.js
+|   |   |-- Pokedex.js
+|   |-- services/
+|   |   |-- api.js
+|   |   |-- database.js
+|   |-- App.js
+|   |-- index.js
+|   |-- styles.css
+|-- package.json
+
+
+
+** Pokedex API**
+https://github.com/russethk/dev-repo/blob/main/poke-game/frontend/src/api/api.js
+
+** Pokedex Database Schemas **
+https://github.com/russethk/dev-repo/tree/main/poke-game/backend/schemas
+
 
 
