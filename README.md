@@ -22,10 +22,8 @@ Players will draw Pokemon cards, each featuring a challenge for the player to id
 Players 'catch' the Pokemon by correctly choosing the monsters' type; adding the card to their 'Pokedex' of won cards.
 
 **Score Tracking:**
-A scorecard will be displayed to track the number of cards won.<img width="290" alt="Screenshot 2024-02-23 at 2 17 23 PM" src="https://github.com/krusseth-designs/capstone/assets/66326669/546895ab-389e-4b11-9071-2cf682cece1c">
-
-Database Integration:
-The PostgreSQL database will store crucial player information, including the Pokemon they've won.
+A scorecard will be displayed to track the number of cards won.
+The PostgreSQL database stores player information, including the Pokemon they've won.
 
 **Pokedex Organization:**
 The won cards in the Pokedex are categorized by type, enhancing the user experience.
@@ -34,6 +32,8 @@ Players can click on a card to flip it over, revealing character properties such
 ------------------------------------------------------------
 
 ** Application Components Outline ** 
+
+
 <img width="290" alt="Screenshot 2024-02-23 at 2 17 23 PM" src="https://github.com/krusseth-designs/capstone/assets/66326669/9ca2e996-57f5-4457-af7b-865035be5018">
 
 
