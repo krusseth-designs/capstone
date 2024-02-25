@@ -1,4 +1,4 @@
-import React,{ useContext } from "react";
+import React, { useContext } from "react";
 import { Link, NavLink } from "react-router-dom";
 import UserContext from "../auth/UserContext";
 import * as Icon from 'react-bootstrap-icons';
@@ -12,13 +12,13 @@ function NavBar ({logout}) {
         return (
             <ul className="navbar-nav ml-auto">
                 <li className="nav-item mr-4">
-                    <NavLink className="nav-link" to="/companies">
-                         <Icon.Building /> Companies
+                    <NavLink className="nav-link" to="/game">
+                         <Icon.Building /> Game
                     </NavLink>
                 </li>
                 <li className="nav-item mr-4">
-                    <NavLink className="nav-link" to="/jobs">
-                        <Icon.Briefcase /> Jobs
+                    <NavLink className="nav-link" to="/pokedex">
+                        <Icon.Briefcase /> Pokedex
                     </NavLink>
                 </li>
                 <li className="nav-item mr-4">
@@ -38,6 +38,16 @@ function NavBar ({logout}) {
     function loggedOutNav() {
         return (
             <ul className="navbar-nav ml-auto">
+                        <li className="nav-item mr-4">
+                    <NavLink className="nav-link" to="/game">
+                         <Icon.Controller /> Game
+                    </NavLink>
+                </li>
+                <li className="nav-item mr-4">
+                    <NavLink className="nav-link" to="/pokedex">
+                        <Icon.CardList /> Pokedex
+                    </NavLink>
+                </li>
                 <li className="nav-item mr-4">
                     <NavLink className="nav-link" to="/login">
                         <Icon.BoxArrowLeft />  Login
@@ -54,10 +64,11 @@ function NavBar ({logout}) {
     return (
         <nav className="NavBar navbar navbar-expand-md">
             <Link className="navbar-brand" to="/">
-            <img src={`${process.env.PUBLIC_URL}/star_icon.png`} className="nav-logo" />Jobly
+            <img src={`${process.env.PUBLIC_URL}/pokeball-icon.png`} className="nav-logo" alt="pokeball icon" />Pokemon Challenge
             </Link>
-            {currentUser ? loggedInNav() : loggedOutNav()}
+            {currentUser ? loggedInNav() : loggedOutNav() }
         </nav>
+        
     );
 }
 

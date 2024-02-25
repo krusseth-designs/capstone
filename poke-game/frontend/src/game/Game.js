@@ -15,6 +15,7 @@ const Game = () => {
     const [answer, setAnswer] = useState('');
     const [message, setMessage] = useState('');
 
+
     // Draw a random Pokemon from the pokeapi
     // Get all the data from the pokeapi and select a random Pokemon
     // include the name and type of the Pokemon
@@ -44,27 +45,17 @@ const Game = () => {
         if (answer.toLowerCase() === pokemon.type) {
             setMessage('You caught the Pokemon!');
             setScore(score + 1);
-            addPokemon();
+            catchPokemon();
         } else {
             setMessage('You missed the Pokemon!');
         }
     }
 
-    // Add the Pokemon to the Pokedex
-    // Include the name and type of the Pokemon
-    // Set the Pokemon to state
-
-    const addPokemon = async () => {
-        try {
-            const response = await axios.post('http://localhost:3001/pokemon', {
-                id: pokemon.id,
-                name: pokemon.name,
-                type: pokemon.type
-            });
-            console.log(response.data);
-        } catch (error) {
-            console.error('Error adding Pokemon to Pokedex:', error);
-        }
+    /* catchPokemon function to add the Pokemon to the Pokedex */
+    const catchPokemon = () => {
+        const pokedex = JSON.parse(localStorage.getItem('pokedex')) || [];
+        pokedex.push(pokemon.name);
+        localStorage.setItem('pokedex', JSON.stringify(pokedex));
     }
 
     return (
